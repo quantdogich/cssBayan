@@ -1,0 +1,186 @@
+:root{
+    --atime: 500ms;
+}
+
+.global-wrapper-main:hover .icon1{
+    display: block;
+}
+
+.global-wrapper-main:hover .icon2{
+    display: block;
+}
+.global-wrapper-main:hover .icon3{
+    display: block;
+}
+.global-wrapper-main:hover .icon4{
+    display: block;
+}
+.global-wrapper-main:hover .icon5{
+    display: block;
+}
+
+.global-wrapper-main:hover{
+    color: blue;
+}
+
+.global-wrapper-main:not(:hover) .icon1,.icon2,.icon3,.icon4,.icon5{
+    display: none;
+}
+.global-wrapper-main:not(:hover){
+    color: black;
+}
+
+
+
+@keyframes init-picture{
+    from {height: 0rem; width: auto; opacity: 0;}
+    to {height: 10rem; width: auto; opacity: 1;}
+}
+
+/* mobile anim */
+
+@keyframes init-mob-picture{
+    from {height: 0rem; width: auto; opacity: 0;}
+    to {height: 7rem; width: auto; opacity: 1;}
+}
+
+
+
+/*  */
+
+#p2:hover .m2{
+    display: block;
+    height: 10rem;
+    animation: init-picture var(--atime) 1;
+}
+
+#p2.hover {
+    height: 10rem;
+}
+
+#p2:hover .r-icon{
+    transform: rotate(45deg);
+}
+#p2:not(:hover) .m2{
+    height: 0rem;
+}
+
+/*  */
+
+#p3:hover .m3{
+    display: block;
+    height: 10rem;
+    animation: init-picture var(--atime) 1;
+}
+
+#p3:hover .r-icon{
+    transform: rotate(45deg);
+}
+#p3:not(:hover) .m3{
+    height: 0rem;
+    
+}
+
+/*  */
+
+#p4:hover .m4{
+    display: block;
+    height: 10rem;
+    animation: init-picture var(--atime) 1;
+}
+
+#p4:hover .r-icon{
+    transform: rotate(45deg);
+}
+#p4:not(:hover) .m4{
+    height: 0rem;
+    
+}
+
+/*  */
+
+#p5:hover .m5{
+    display: block;
+    height: 10rem;
+    animation: init-picture var(--atime) 1;
+}
+
+#p5:hover .r-icon{
+    transform: rotate(45deg);
+}
+#p5:not(:hover) .m5{
+    height: 0rem;
+    
+}
+
+.global-wrapper-main:not(:hover) .m2,.m3,.m4,.m5{
+    height: 0rem;
+}
+
+/* another animation for mobile */
+@media screen and ( ((max-width:568px)) ){
+    #p2:hover .m2{
+        display: block;
+        height: 7rem;
+        width: auto;
+        animation: init-mob-picture var(--atime) 1;
+    }
+    
+    #p2:hover .r-icon{
+        transform: rotate(45deg);
+    }
+    #p2:not(:hover) .m2{
+        height: 0rem;
+    }
+    
+    /*  */
+    
+    #p3:hover .m3{
+        display: block;
+        height: 7rem;
+        width: auto;
+        animation: init-mob-picture var(--atime) 1;
+    }
+    
+    #p3:hover .r-icon{
+        transform: rotate(45deg);
+    }
+    #p3:not(:hover) .m3{
+        height: 0rem;
+        
+    }
+    
+    /*  */
+    
+    #p4:hover .m4{
+        display: block;
+        height: 7rem;
+        width: auto;
+        animation: init-mob-picture var(--atime) 1;
+    }
+    
+    #p4:hover .r-icon{
+        transform: rotate(45deg);
+    }
+    #p4:not(:hover) .m4{
+        height: 0rem;
+        
+    }
+    
+    /*  */
+    
+    #p5:hover .m5{
+        display: block;
+        height: 7rem;
+        width: auto;
+        animation: initmob-picture var(--atime) 1;
+    }
+    
+    #p5:hover .r-icon{
+        transform: rotate(45deg);
+    }
+    #p5:not(:hover) .m5{
+        height: 0rem;
+        
+    }
+}

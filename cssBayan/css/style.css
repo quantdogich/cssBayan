@@ -1,0 +1,135 @@
+html{
+    font-family: 'Aclonica';
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+
+*{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+body{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+
+.global-wrapper-main{
+    padding: 5% 5% 5% 5%;
+}
+
+
+.global-wrapper-header{
+    padding: 0% 5%;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.mainlistheader{
+    text-align: left;
+}
+
+.ordinarylistheader{
+
+    text-align: left;
+}
+
+
+.combined{
+    padding-top: 0.67rem;
+}
+
+
+
+.item{
+    border-top: 1vh solid rgba(127,127,127,0.2);
+    border-radius: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0% 2%;
+}
+
+
+
+.memes{
+    /* height: 10rem; */
+    padding-bottom: 2%;
+    display: block;
+}
+
+.m1, .m2, .m3, .m4, .m5{
+    display: block;
+    margin: auto;
+}
+
+.r-icon{
+    width: 2rem;
+    height: auto;
+}
+
+.i1:active{
+    color: brown;
+}
+
+@media screen and ( ((max-width:568px)) ){
+    h1{color:rgb(80, 42, 21);}
+    body{
+        width: 85%;
+    }
+    html{
+        font-size: 2vh;
+    }
+    .memes{
+        width: 7rem;
+    }
+    .m1{
+        height: 7rem;
+        width: auto;
+    }
+}
+
+@media screen and (min-width:569px) and ( ((max-width:1180px)) ){
+    h1{color:rgb(165, 33, 0);}
+    body{
+        width: 80%;
+    }
+    html{
+        font-size: 2vh;
+    }
+    .memes{
+        height: 10rem;
+    }
+    .m1{
+        height: 10rem;
+        width: auto;
+    }
+    
+}
+
+@media screen and (min-width:1181px) and (max-width: 1920px){
+    h1{color:rgb(0, 92, 179);}
+    .global-wrapper-main:hover{
+        cursor: cell;
+    }
+    body{
+        width: 60%;
+    }
+    html{
+        font-size: 1.5rem;
+    }
+    .m1{
+        height: 10rem;
+        width: auto;
+    }
+    
+
+}
+@media screen and (min-width:1921px){
+    h1{color:rgb(171, 218, 3);}
+}
